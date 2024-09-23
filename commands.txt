@@ -1,0 +1,141 @@
+#Here are the commands that I used in the Kubernetes while running 
+#the mongodb application with mongodb-express 
+
+#Check Minikube status after installation and running the minikube
+minikube status 
+minikube start 
+
+#Create encrypted username and paaswords
+echo -n username | base64 
+echo -n mongo-username | base64 
+echo -n mongo-user | base64 
+echo -n mongo-passowrd | base64 
+
+#Commands used while working on this application 
+kubectl apply -f mongo-secret.yaml 
+kubectl get svc
+kubectl get secret
+kubectl apply -f mongo.yaml 
+kubectl apply -f mongo.yaml 
+kubectl get secret 
+kubectl describe secret mongodb-secret 
+kubectl apply -f mongo.yaml 
+kubectl get pods 
+kubectl apply -f mongo.yaml 
+kubectl apply -f mongo-express.yaml 
+kubectl apply -f mongo-express.yaml 
+kubectl get svc 
+minikube service mongodb-service 
+kubectl delete -f mongo-express.yaml 
+kubectl get pod
+kubectl apply -f mongo-express.yaml 
+kubectl get pod 
+kubectl describe mongo-express-974f974c-hcvz4
+kubectl logs mongo-express-974f974c-hcvz4
+kubectl describe pod mongo-express-974f974c-hcvz4
+kubectl get po
+kubectl describe pod mongo-express-974f974c-hcvz4
+kubectl get all
+kubectl delete -f mongo-express.yaml 
+kubectl apply -f mongo-configmap.yml 
+kubectl get configmap
+kubectl describe configmap mongodb-configmap
+kubectl get configmap
+kubectl apply -f mongo-configmap.yml 
+kubectl apply -f mongo-express.yaml 
+kubectl get pod
+kubectl logs mongo-express-974f974c-kbs5j
+kubectl describe pod mongo-express-974f974c-kbs5j
+kubectl delete mongo-express.yaml 
+kubectl delete -f mongo-express.yaml 
+kubectl apply -f mongo-express.yaml 
+kubectl get pods 
+kubectl logs mongo-express-7f889b6455-thjrr
+kubectl logs mongodb-deployment-78cf89fc4d-cr8xk
+kubectl logs mongo-express-7f889b6455-thjrr
+kubectl get pods 
+kubectl get svc 
+minikube service mongo-express-service
+
+#Added code to git repo
+git init
+git remote add origin git@github.com:1808v/devops-learn-k8s.git
+git pull origin main
+git add . && git commit -m "k8s-learning" && git push origin main 
+
+#Created SSh key to connect with Github with my system
+ssh-keygen 
+ls -la ~/.ssh
+cat ~/.ssh/id_ed25519.pub 
+
+#Solved git connection issue 
+git pull origin main 
+git add . && git commit -m "k8s-learning" && git push origin main 
+git add .
+git commit -m "k8s-learn"
+git init
+git commit -m "k8s-learn"
+
+#Provided username and email to for identification
+git config --global user.email "754vivek@gmail.com'
+git config --global user.email "754vivek@gmail.com"
+git config --global user.name "1808v"
+git commit -m "k8s-learn"
+git push origin main 
+#Found branching issue 
+git remote -v 
+git pull --rebase
+git checkout main 
+
+#Found git branching issue and merged the branchs on local
+git status 
+git ls-files 
+git branch 
+git checkout main
+git merge master 
+
+#Added the code 
+git branch 
+git add .
+git commit -m "k8s-learn"
+git push origin main 
+
+#While creating ingress and enabling the ingress controller
+kubectl apply -f my-ingress.yaml 
+minikube addons enable ingress
+kubectl  get pods
+
+#used kubens tool to manage the multiple namespaces
+kubens namespace default 
+kubens --help 
+kubens default 
+
+#Other commands used 
+kubectl get pod -n kube-system
+kubectl get pods -a 
+kubectl get pods --all
+kubectl get pod -n kube-system
+kubectl get pod -n vivek
+kubectl get ns
+kubectl get pod -n ingress-nginx
+minikube dashboard 
+minikube get ns 
+kubectl get ns 
+kubectl get pods -n kubernetes-dashboard
+kubectl get all  -n kubernetes-dashboard
+\kubectl apply -f dashboard-ingress.yaml 
+kubectl get ns 
+\kubectl get all -n ingress-nginx
+kubectl apply -f dashboard-ingress.yaml 
+kubectl get ingress -n kubernetes-dashboard
+
+#Created the host for minikube dashboard
+sudo vim /etc/hosts
+sudo apt install vim 
+sudo vim /etc/hosts
+
+#Checked ingress details
+kubectl get ingress -n kubernetes-dashboard
+kubectl  describe ingress dashboard-ingress
+kubectl  describe ingress dashboard-ingress -n kubernetes-dashboard
+
