@@ -1,0 +1,11 @@
+# Command to describe pod and check details and status
+# kubectl describe pod flask-app-7587f55dfb-q2nlh
+
+'''
+Error: which describe the pod is not deployed due to anti-afinity rule on node.
+
+Warning  FailedScheduling  59s   default-scheduler  0/1 nodes are available: 1 node(s) didn't match pod anti-affinity rules. 
+preemption: 0/1 nodes are available: 1 No preemption victims found for incoming pod.
+
+'''
+
